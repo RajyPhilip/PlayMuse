@@ -43,4 +43,3 @@ If you want to contribute to this project, please fork the repository and create
  [@RajyPhilip](https://github.com/RajyPhilip)
 
 
-# Hosted
