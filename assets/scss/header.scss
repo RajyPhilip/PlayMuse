@@ -1,0 +1,65 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    
+    div {
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            margin-left: 40px;
+
+            .nav-logo {
+                margin-left: 5px;
+                height: 50px;
+                animation: rotate 2s ease-in-out infinite;
+            }
+
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            h1 {
+                font-family: sans-serif;
+                margin-top: 0px;
+                margin-left: 10px;
+                font-weight: 900;
+                color: red;
+            }
+
+            h3 {
+                font-family: sans-serif;
+                margin-left: -3.3rem;
+                margin-top: 1.5rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    #sign-links {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        margin-right: 20px;
+
+        a {
+            height: 30px;
+            width: 80px;
+            background-color: rgb(88, 171, 209);
+            margin-right: 10px;
+            color: rgb(255, 255, 255);
+            border-radius: 5.8rem;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<link
+  rel="stylesheet"
+  href="/css/signin.css"
+  type="text/css"
+/>
+
+<%- include('user_sidebar') %>
+
+<h1 id="signin-title">Enter Your Credentials to Sign-In</h1>
+
+<div id="page">
+  <div id="sign-in-form">
+    <form
+      id="forum"
+      action="/users/signin"
+      method="post"
+    >
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+      />
+      <input
+        type="password"
+        name="password"
+        placeholder="Your Password"
+        required
+      />
+
+      <button
+        id="sign-in-btn"
+        type="Submit"
+      >
+        Sign In
+      </button>
+    </form>
+  </div>
+</div>

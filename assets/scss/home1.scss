@@ -1,0 +1,195 @@
+
+.cards-container{
+display: flex;
+flex-wrap: wrap;
+margin-top: 5px;
+}
+
+///all artist css
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    width: 200px;
+
+    img {
+        margin-top: 20px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    p {
+        color: red;
+        font-weight: 900;
+    }
+}
+
+.add-fav-artist {
+    text-decoration: none;
+    color: white;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    background-color: red;
+    font-weight: 900;
+    border-radius: 1.8rem;
+    padding: 4px;
+}
+
+/// all songs css
+.songs-cards-parent {
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 300px;
+    padding: 10px;
+}
+.songs-card {
+    height: 250px;
+    width: 180px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        height: 120px;
+        width: 120px;
+        margin-top: 10px;
+    }
+
+    .song-title {
+        color: rgb(216, 61, 61);
+        text-align: center;
+    }
+
+    .song-artist {
+        color: rgb(176, 233, 20);
+        margin-top: -10px;
+        size: 7px;
+        padding: 2px;
+    }
+}
+
+.adding-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    a {
+        padding: 4px;
+        margin-top: -2px;
+        margin-left: -20px;
+        font-size: 20px;
+        color: inherit;
+    }
+    .add-to-fav{
+        margin-left: -18px;
+    }
+    .add-to-fav:hover {
+        color: rgb(255, 0, 0);
+    }
+
+    .add-to-playlist:hover {
+        color: blue;
+    }
+
+    a:hover {
+        transform: scale(1.5);
+    }
+}
+
+.add-btn {
+    background-color: red;
+    color: white;
+    border-radius: 1.8rem;
+    border: 1px black;
+    cursor: pointer;
+    font-weight: 900;
+    padding: 5px;
+}
+
+
+// COPIED FOR DROPDOWN PLAYLIST TO ADD IN CSS
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 4px;
+    font-size: 20px;
+    border: none;
+    // margin-left: -2px;
+}
+
+.dropbtn:hover {
+    transform: scale(1.2);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00000000;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        display: block;
+    }
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a:hover {
+    background-color: inherit;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+//create playlist styles
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    color: white;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 3px 5px 3px 5px;
+    transition: width 0.4s ease-in-out;
+    background-color: inherit;
+}
+
+input[type=text]:focus {
+    width: 30%;
+}
+
+#create-playlist-btn{
+        background-color: #aa1d04;
+        color: white;
+        font-size: 20px;
+        font-weight: 900;
+        border: none;
+        cursor: pointer;
+}

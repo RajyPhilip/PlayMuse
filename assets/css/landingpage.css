@@ -1,0 +1,59 @@
+.landing-Page {
+  display: flex;
+  flex-direction: column; }
+  .landing-Page .marsh {
+    float: left;
+    z-index: 1;
+    animation: dance 2s ease-in-out infinite; }
+    .landing-Page .marsh img {
+      z-index: 2;
+      position: absolute;
+      top: 30%;
+      height: 430px;
+      width: 450px;
+      margin-left: 50%; }
+  .landing-Page .detail {
+    margin-left: 60px;
+    z-index: 10; }
+    .landing-Page .detail .headcontent {
+      font-size: 40px;
+      position: relative;
+      top: 160px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bolder;
+      animation: text 2s ease-in-out infinite; }
+    .landing-Page .detail .content {
+      font-size: 20px;
+      color: white;
+      margin-top: 40px;
+      position: relative;
+      top: 150px;
+      font-weight: lighter; }
+
+@keyframes text {
+  0% {
+    color: red; }
+  25% {
+    color: #0fa8cf; }
+  50% {
+    color: #f6ff00; }
+  75% {
+    color: #1ff707; }
+  100% {
+    color: #b300ff; } }
+    .landing-Page .detail .button a {
+      border: 2px solid white;
+      border-radius: 30px;
+      padding: 20px;
+      margin-top: 40px;
+      position: relative;
+      top: 160px;
+      display: block;
+      width: 100px;
+      text-align: center;
+      color: white;
+      text-decoration: none; }
+    .landing-Page .detail .button a:hover {
+      background-color: white;
+      color: #0a0a0a; }

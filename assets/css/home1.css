@@ -1,0 +1,148 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px; }
+
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 250px;
+  width: 200px; }
+  .artist-card img {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; }
+  .artist-card p {
+    color: red;
+    font-weight: 900; }
+
+.add-fav-artist {
+  text-decoration: none;
+  color: white;
+  height: 20px;
+  width: 100px;
+  text-align: center;
+  background-color: red;
+  font-weight: 900;
+  border-radius: 1.8rem;
+  padding: 4px; }
+
+.songs-cards-parent {
+  display: flex;
+  border: 1px solid white;
+  margin-left: 15px;
+  margin-top: 15px;
+  height: 300px;
+  padding: 10px; }
+
+.songs-card {
+  height: 250px;
+  width: 180px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .songs-card img {
+    height: 120px;
+    width: 120px;
+    margin-top: 10px; }
+  .songs-card .song-title {
+    color: #d83d3d;
+    text-align: center; }
+  .songs-card .song-artist {
+    color: #b0e914;
+    margin-top: -10px;
+    size: 7px;
+    padding: 2px; }
+
+.adding-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px; }
+  .adding-links a {
+    padding: 4px;
+    margin-top: -2px;
+    margin-left: -20px;
+    font-size: 20px;
+    color: inherit; }
+  .adding-links .add-to-fav {
+    margin-left: -18px; }
+  .adding-links .add-to-fav:hover {
+    color: red; }
+  .adding-links .add-to-playlist:hover {
+    color: blue; }
+  .adding-links a:hover {
+    transform: scale(1.5); }
+
+.add-btn {
+  background-color: red;
+  color: white;
+  border-radius: 1.8rem;
+  border: 1px black;
+  cursor: pointer;
+  font-weight: 900;
+  padding: 5px; }
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 4px;
+  font-size: 20px;
+  border: none; }
+
+.dropbtn:hover {
+  transform: scale(1.2); }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00000000;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block; }
+
+/* Links inside the dropdown */
+.dropdown-content a:hover {
+  background-color: inherit; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41; }
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 3px 5px 3px 5px;
+  transition: width 0.4s ease-in-out;
+  background-color: inherit; }
+
+input[type=text]:focus {
+  width: 30%; }
+
+#create-playlist-btn {
+  background-color: #aa1d04;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer; }

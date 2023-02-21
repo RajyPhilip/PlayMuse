@@ -1,0 +1,49 @@
+<link
+  rel="stylesheet"
+  href="/css/signup.css"
+  type="text/css"
+/>
+
+<%- include('user_sidebar') %>
+
+<h1 id="signup-title">Enter Your Details</h1>
+<div id="signuppage">
+  <div id="sign-up-form">
+    <form
+      id="signup-forum"
+      action="/users/signup"
+      method="post"
+    >
+      <input
+        type="text"
+        name="name"
+        placeholder="enter your name"
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="enter your email"
+        required
+      />
+      <input
+        type="password"
+        name="password"
+        placeholder="enter your password"
+        required
+      />
+      <input
+        type="password"
+        name="confirm_password"
+        placeholder="confirm your password"
+        required
+      />
+      <button
+        id="sign-up-btn"
+        type="submit"
+      >
+        signup
+      </button>
+    </form>
+  </div>
+</div>

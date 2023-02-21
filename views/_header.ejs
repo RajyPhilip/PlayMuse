@@ -1,0 +1,35 @@
+<link
+  rel="stylesheet"
+  href="/css/header.css"
+  type="text/css"
+/>
+
+<nav
+  id="navbar"
+  class="d-flex"
+>
+  <div>
+    <a
+      href="/"
+      class="d-flex"
+    >
+      <img
+        class="nav-logo"
+        src="/images/logo/logo.png"
+        alt=""
+      />
+      <h1 class="headcontent">Music</h1>
+      <h3>Player</h3></a
+    >
+  </div>
+  <div id="sign-links">
+    <% if(locals.user){ %>
+    <a href="/users/profile"><%= user.name %></a>
+    <a href="/users/signout">Sign Out</a>
+
+    <% }else{ %>
+    <a href="/users/signinPage">Sign In</a>
+    <a href="/users/signupPage">Sign Up</a>
+    <% } %>
+  </div>
+</nav>

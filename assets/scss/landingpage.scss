@@ -1,0 +1,99 @@
+.landing-Page {
+    display: flex;
+    flex-direction: column;
+    .marsh {
+        float: left;
+        z-index: 1;
+        animation: dance 2s ease-in-out infinite;
+
+        img {
+            z-index: 2;
+            position: absolute;
+            top: 30%;
+            height: 430px;
+            width: 450px;
+            margin-left: 50%;
+        }
+    }
+
+    // @keyframes dance {
+    //     0% {
+    //         margin-left: 50px;
+    //     }
+
+    //     50%{
+    //         margin-left: 200px;
+    //     }
+    //     100% {
+    //         margin-left: 50px;
+    //     }
+    // }
+
+    .detail {
+        margin-left: 60px;
+        z-index: 10;
+
+        .headcontent {
+            font-size: 40px;
+            position: relative;
+            // margin-top: 40px;
+            top: 160px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bolder;
+            animation: text 2s ease-in-out infinite;
+        }
+
+        .content {
+            font-size: 20px;
+            color: white;
+            margin-top: 40px;
+            position: relative;
+            top: 150px;
+            font-weight: lighter;
+        }
+
+        @keyframes text {
+            0% {
+                color: red;
+            }
+
+            25% {
+                color: rgb(15, 168, 207);
+            }
+
+            50% {
+                color: rgb(246, 255, 0);
+            }
+
+            75% {
+                color: rgb(31, 247, 7);
+            }
+
+            100% {
+                color: rgb(179, 0, 255);
+            }
+        }
+
+        .button {
+            a {
+                border: 2px solid white;
+                border-radius: 30px;
+                padding: 20px;
+                margin-top: 40px;
+                position: relative;
+                top: 160px;
+                display: block;
+                width: 100px;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: rgb(255, 255, 255);
+                color: rgb(10, 10, 10);
+            }
+        }
+    }
+}

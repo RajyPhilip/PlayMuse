@@ -1,0 +1,43 @@
+
+#signin-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(228, 22, 66);
+}
+#page {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #sign-in-form {
+            border: 2px solid rgb(110, 104, 104);
+            width: 300px;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 18px;
+        }
+                #forum {
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                                #sign-in-btn {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-weight: 400;
+                                    color: white;
+                                    background-color: rgb(112, 172, 212);
+                                    height: 40px;
+                                    width: 90px;
+                                    border-radius: 1.8rem;
+                                }
+
+}
+

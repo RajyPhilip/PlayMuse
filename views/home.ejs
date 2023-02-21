@@ -1,0 +1,103 @@
+<link
+  rel="stylesheet"
+  href="/css/home1.css"
+  type="text/css"
+/>
+
+<div class="cards-container">
+  <% for(i of allartist) { %>
+  <div class="artist-card">
+    <img
+      src="<%= i.image %>"
+      alt=""
+    />
+    <p><%= i.name %></p>
+    <form
+      action="/users/add-fav-artist"
+      method="post"
+    >
+      <input
+        type="hidden"
+        name="name"
+        value="<%= i.id %>"
+      />
+      <button class="add-btn">
+        Favourite <i class="fa-solid fa-heart"></i>
+      </button>
+    </form>
+  </div>
+  <% } %>
+</div>
+
+<div class="cards-container">
+  <% for(i of allSongs){ %>
+  <div class="songs-cards-parent">
+    <div class="songs-card">
+      <img
+        src="<%= i.image %>"
+        alt="<%= i.title %>"
+      />
+      <h2 class="song-title"><%= i.title %></h2>
+      <p class="song-artist"><%= i.artist %></p>
+      <form
+        action="/users/add-to-queue"
+        method="post"
+      >
+        <input
+          type="hidden"
+          name="song_id_for_queue"
+          value="<%= i._id %>"
+        />
+        <input
+          class="add-btn"
+          type="submit"
+          value="Add-to-Queue"
+        />
+      </form>
+    </div>
+    <div class="adding-links">
+      <form
+        action="/users/myfav-song"
+        method="post"
+      >
+        <input
+          type="hidden"
+          name="name"
+          value="<%= i._id %>"
+        />
+        <button class="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+      </form>
+
+      <a href="">
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa-solid fa-plus"></i></button>
+          <div class="dropdown-content">
+            <% for(j of myPlayList){ %>
+            <a href="/users/add-to-playlist/<%= i._id %>/<%= j._id %>"
+              ><%= j.title %></a
+            >
+            <% } %>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <% } %>
+</div>
+
+<form
+  action="/users/create-playlist"
+  method="post"
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="create-playlist"
+  />
+  <button
+    id="create-playlist-btn"
+    type="submit"
+  >
+    <i class="fa-solid fa-plus"></i>
+  </button>
+</form>

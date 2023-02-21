@@ -1,0 +1,26 @@
+<link
+  rel="stylesheet"
+  href="/css/profile.css"
+/>
+
+<%- include('user_sidebar') %>
+
+<h1>this is the profile page</h1>
+<h3><%= user.name %></h3>
+
+<form
+  action="/users/update-pass"
+  method="post"
+>
+  <input
+    placeholder="enter new password"
+    type="password"
+    name="password"
+  />
+  <input
+    placeholder="confirm password"
+    type="password"
+    name="confirmPassword"
+  />
+  <button type="submit">Reset Password</button>
+</form>
